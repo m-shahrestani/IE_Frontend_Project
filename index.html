@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>internet engineering</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/jpg" href="./images/favicon.png">
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navigation__button">
+        <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+      </label>
+      <div class="navigation__background"></div>
+
+      <nav class="navigation__nav" role="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+              <a href="#start-section" class="navigation__link"><span>01</span>START</a>
+          </li> 
+          <li class="navigation__item">
+            <a href="#lectures-section" class="navigation__link"><span>02</span>COURSE LECTURES</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#books-section" class="navigation__link"><span>03</span>RELATED BOOKS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="context">
+      <div class="section set-background" id="start-section">
+        <h1 class="slide-in">INTERNET</h1>
+        <h1 class="slide-in">ENGINEERING</h1>
+        <p class="slide-in">IS WHAT WE ARE GOING TO</p>
+        <P class="slide-in">LEARN IN THIS COURSE</P>
+        <button class="slide-in button" onclick="window.location.href='#books-section';">SEE THIS COURSE RELATED BOOKS</button>
+      </div>
+      <div class="section set-background-2" id="lectures-section">
+        <div class="forth lecture-card">
+          <img src="./images/http_icon.png" alt="HTTP"/>
+          <h2>HTTP</h2>
+          <p>The Hypertext Transfer Protocol is an application layer.<br>Communication between client computers and web servers is done by sending HTTP Requests and recieving HTTP Responses.</p>
+        </div>
+        <div class="forth lecture-card">
+          <img src="./images/css_icon.png" alt="HTML CSS" />
+          <h2>HTML CSS</h2>
+          <p>HTML (HyperText Markup Language) is the standard markup language for Web pages. CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+        </div>
+        <div class="forth lecture-card">
+          <img src="./images/js_icon.png" alt="JAVASCRIPT"/>
+          <h2>JAVASCRIPT</h2>
+          <p>JavaScript is the programming language of the Web. JavaScript often abbreviated to JS is a lightweight, interpreted, or just-in-time compiled programming language with first-class function.</p>
+        </div>
+        <div class="forth lecture-card">
+          <img src="./images/go_icon.png" alt="GOLANG"/>
+          <h2>GOLANG</h2>
+          <p>Go language is a programming language initially developed at Google. It is a statically typed language having syntax similar to that of C. Go is used to create computer programs.</p>
+        </div>
+      </div>
+      <div class="section" id="books-section">
+        <div class="books-section-title"><h1>MOST POPULAR BOOKS</h1></div>
+        <div class="card-container">
+          <div class="flip-card third">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/Book1-2.png" alt="Avatar" style="width:95%;min-height:150px;">
+                <div>
+                  <p>By David Flanagan</p>
+                  <p>Seventh Edition</p>
+                  <p>Published at 2020</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>JavaScript: The Definitive Guide</h1>
+                <h2>Price: $25.12</h2>
+                <label for="modal1" class="button">Buy</label>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card third">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/Book2-2.jpg" alt="Avatar" style="width:95%;min-height:150px;">
+                <div>
+                  <p>By Robin Wieruch</p>
+                  <p>2022 Edition</p>
+                  <p>Published at 2022</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>The Road to React</h1>
+                <h2>Price: $25.12</h2>
+                <label for="modal2" class="button">Buy</label>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card third">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/Book3-2.png" alt="Avatar" style="width:95%;min-height:150px;">
+                <div>
+                  <p>By Caleb Doxsey</p>
+                  <p>First Edition</p>
+                  <p>Published at 2016</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <h1>Introducing Go</h1>
+                <h2>Price: $15.88</h2>
+                <label for="modal3" class="button">Buy</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 0;">
+          <input type="checkbox" id="modal1">
+          <label for="modal1" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>JavaScript: The Definitive Guide</h3>
+              <label for="modal1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC" width="16" height="16" alt="">
+              </label>
+            </div>
+            <div class="modal-content">
+              <img src="./images/Book1-1.jpg" alt="js" style="max-width: 300px;"/>
+              <div class="detail-card">
+                <h2>start reading now</h2>
+                <h3>JavaScript: The Definitive Guide</h3>
+                <p>
+                  This book is for programmers who want to learn JavaScript and for web developers who want to take their understanding and mastery to the next level. It begins by explaining the JavaScript language itself, in detail, from the bottom up. It then builds on that foundation to cover the web platform and Node.js.
+                </p>
+                <button class="button" onclick="window.location.href='https://www.amazon.com/gp/product/1491952024/';">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 0;">
+          <input type="checkbox" id="modal2">
+          <label for="modal2" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>The Road to React</h3>
+              <label for="modal2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC" width="16" height="16" alt="">
+              </label>
+            </div>
+            <div class="modal-content">
+              <img src="./images/Book2-1.jpg" alt="react" style="max-width: 300px;"/>
+              <div class="detail-card">
+                <h2>start reading now</h2>
+                <h3>The Road to React</h3>
+                <p>
+                  In "The Road to React" you will learn about all the fundamentals of React.js with Hooks while building a full-blown React application step by step. While you create the React application, every chapter will introduce you to a new React key feature. However, there is more than only the fundamentals: The book dives into related topics (e.g. React with TypeScript, Testing, Performance Optimizations) and advanced feature implementations like client- and server-side searching. At the end of the book, you will have a fully working deployed React application.
+                </p>
+                <button class="button" onclick="window.location.href='https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/';">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 0;">
+          <input type="checkbox" id="modal3">
+          <label for="modal3" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>Introducing Go</h3>
+              <label for="modal3">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC" width="16" height="16" alt="">
+              </label>
+            </div>
+            <div class="modal-content">
+              <img src="./images/Book3-1.jpg" alt="go" style="max-width: 300px;"/>
+              <div class="detail-card">
+                <h2>start reading now</h2>
+                <h3>Introducing Go</h3>
+                <p>
+                  Perfect for beginners familiar with programming basics, this hands-on guide provides an easy introduction to Go, the general-purpose programming language from Google. Author Caleb Doxsey covers the languages core features with step-by-step instructions and exercises in each chapter to help you practice what you learn.
+                </p>
+                <button class="button" onclick="window.location.href='https://www.amazon.com/dp/1491941952/';">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="section">
+        <div class="half">
+          <hr>
+          <p>
+            <a class="links" href="#start-section">CLASS INFO</a>
+            <a class="links">CONTACT US</a>
+            <a class="links">PRIVACY POLICY</a>
+            <a class="links">TERMS</a>
+          </p>
+        </div>
+        <div class="half">
+          <hr>
+          <p>
+            <a class="links" href="https://github.com/m-shahrestani">Created by Mohammadreza Shahrestani © 2023</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
